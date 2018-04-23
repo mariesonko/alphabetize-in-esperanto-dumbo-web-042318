@@ -1,10 +1,4 @@
 def alphabetize(arr)
   alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  arr.sort_by do |word| word.split("").map do |letter| alphabet.index(letter)
-  end
+  arr.sort_by {|word| word.split("").map {|letter| alphabet.index(letter)}}
 end
-end
-#array.sort_by do |word|
-  #word.split('').map do |letter|
-  #  CRAZY_ALPHABET.index(letter)
-#  end
