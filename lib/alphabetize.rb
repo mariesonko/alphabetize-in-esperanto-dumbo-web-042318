@@ -1,3 +1,7 @@
-def alphabetize(arr)
-  arr.sort!{|a,b|  a <=> b}
+def alphabetize (arr, rev=false)
+  if rev
+    arr.sort.reverse
+  else
+    arr.sort
+  end
 end
