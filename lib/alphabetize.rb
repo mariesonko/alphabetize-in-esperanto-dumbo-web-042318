@@ -1,3 +1,3 @@
 def alphabetize(arr)
-  arr.sort!{|a,b| test(?M, a) <=> test (?M,b)}
+  arr[0..1].sort!{|a,b|  a <=> b}
 end
